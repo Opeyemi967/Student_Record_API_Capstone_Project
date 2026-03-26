@@ -34,15 +34,6 @@ The default port is 3000 when `PORT` is not defined.
 | GET | `/api/students` | Retrieve all student records. |
 | POST | `/api/students` | Create a new student record. |
 
-**POST Request Body**
-```json
-{
-	"name": "Grace Hopper",
-	"email": "grace.hopper@example.com",
-	"age": 21,
-	"major": "Computer Science"
-}
-```
 
 ### Individual Student
 
@@ -60,38 +51,6 @@ All endpoints respond with JSON in the shape `{ "data": ... }` on success or `{ 
 ```http
 GET /api/students
 
-200 OK
-{
-	"data": [
-		{
-			"id": 1,
-			"name": "Ada Lovelace",
-			"email": "ada.lovelace@example.com",
-			"age": 20,
-			"major": "Computer Science"
-		}
-	]
-}
-```
-
-**Validation error**
-```http
-POST /api/students
-{
-	"name": "",
-	"email": "not-an-email"
-}
-
-400 Bad Request
-{
-	"errors": [
-		"'name' is required and must be a non-empty string.",
-		"'email' must be a valid email address.",
-		"'age' is required.",
-		"'major' is required."
-	]
-}
-```
 
 ## Postman Collection
 A ready-to-use collection lives in `postman/Student_Record_API.postman_collection.json`. Import it into Postman (or the VS Code Postman extension) to hit each endpoint with preconfigured requests and sample bodies.
