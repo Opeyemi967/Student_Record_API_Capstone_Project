@@ -39,6 +39,38 @@ app.get("/", (req, res) => {
   res.send("My Student Record API is running!");
 });
 
+// ------CREATE USER (POST)---------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // START SERVER
 app.listen(PORT, () => {
