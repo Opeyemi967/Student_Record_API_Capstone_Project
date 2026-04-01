@@ -31,12 +31,21 @@ let users = [];
 
 
 // ------ROUTES-----
-// GET
-// app.get --- This handle a GET request
-// "/" --- This is the root (URL) route
-// (req, res) --- This function run when request and response comes in 
-app.get("/", (req, res) => {
-  res.send("My Student Record API is running!");
+// GET / All students
+app.get("/students", (req, res) => {
+  // Define student data 
+  const { name, email} = req.body; 
+
+  // Prevent empty values & avoid errors when variables are not defined
+  if (!name || !email || !name.trim() || !email.trim()) {
+    return res.status(400).json({ error: "Name and Email are required" });
+  }
+  // Validate email address 
+  if (!email.includes("@") || !email.includes(".")) {
+    return res.status(400).json({ error: "Invalid email format" });
+  }
+
+  res.json({ name, email });
 });
 
 // ------CREATE USER (POST)---------

@@ -1,2 +1,6 @@
 node_modules/
+<<<<<<< HEAD
 .env
+=======
+.env
+>>>>>>> sub_main_branch_1
