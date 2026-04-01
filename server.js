@@ -172,6 +172,10 @@ app.delete("/students/:id", (req, res) => {
   res.status(200).json({ message: "Student deleted successfully" });
 });
 
+app.use((req, res) => {
+  res.status(500).json({ error: "Route not found" });
+});
+
 // START SERVER
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
