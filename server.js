@@ -26,7 +26,29 @@ app.use((req, res, next) => {
 
 // DUMMY DATABASE
 // Temporary in-memory storage
-let students = [];
+let students = [
+  {
+    id: 1,
+    name: "favour",
+    email: "favour@gmail.com",
+    gender: "female",
+    phoneNumber: "080123467984",
+  },
+  {
+    id: 1,
+    name: "daniel",
+    email: "daniel@gmail.com",
+    gender: "male",
+    phoneNumber: "080123467984",
+  },
+  {
+    id: 1,
+    name: "levison",
+    email: "levison@gmail.com",
+    gender: "female",
+    phoneNumber: "080123467984",
+  }
+];
 
 // ------ROUTES-----
 // GET / Read all the students name,email,gender, phone Number.
