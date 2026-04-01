@@ -1,7 +1,7 @@
 // Import required packages
-const express = require("express");  //Import Express framework to build server and routes
-const dotenv = require("dotenv");   //Import dotenv to load environment variables from .env file
-const path = require("path");   //Import path module (built-in) to handle file paths safely
+const express = require("express"); //Import Express framework to build server and routes
+const dotenv = require("dotenv"); //Import dotenv to load environment variables from .env file
+const path = require("path"); //Import path module (built-in) to handle file paths safely
 
 // Environment setup
 // it loads variables from .env file into process.env
@@ -125,40 +125,6 @@ app.patch("/students/:id", (req, res) => {
   res.status(200).json(student);
 });
 
-<<<<<<< HEAD
-// ------CREATE USER (POST)---------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======
 // DELETE student
 app.delete("/students/:id", (req, res) => {
   //  Extract the ID from the URL
@@ -183,7 +149,6 @@ app.delete("/students/:id", (req, res) => {
   // 200 status = successful request
   res.status(200).json({ message: "Student deleted successfully" });
 });
->>>>>>> sub_main_branch_1
 
 // START SERVER
 app.listen(PORT, () => {
