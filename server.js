@@ -172,6 +172,7 @@ app.delete("/students/:id", (req, res) => {
   res.status(200).json({ message: "Student deleted successfully" });
 });
 
+// errorHandler undefined routes (404)
 app.use((req, res) => {
   res.status(500).json({ error: "Route not found" });
 });
