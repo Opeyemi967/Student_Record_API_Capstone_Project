@@ -35,14 +35,14 @@ let students = [
     phoneNumber: "080123467984",
   },
   {
-    id: 1,
+    id: 2,
     name: "daniel",
     email: "daniel@gmail.com",
     gender: "male",
     phoneNumber: "080123467984",
   },
   {
-    id: 1,
+    id: 3,
     name: "levison",
     email: "levison@gmail.com",
     gender: "female",
