@@ -68,3 +68,9 @@ A ready-to-use collection lives in `postman/Student_Record_API.postman_collectio
 - Persist students in a real database (MongoDB, PostgreSQL, etc.).
 - Add automated tests (Jest + Supertest).
 - Add pagination and filtering to the GET collection endpoint.
+
+## Team Members
+
+		Awalu Levison (Computer Scientist)
+
+		Opeyemi (Computer Scientist)
