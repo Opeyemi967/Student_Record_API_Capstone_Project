@@ -74,3 +74,5 @@ A ready-to-use collection lives in `postman/Student_Record_API.postman_collectio
 		Awalu Levison (Computer Scientist)
 
 		Opeyemi (Computer Scientist)
+
+		Abubakar Ibrahim Aruwa
